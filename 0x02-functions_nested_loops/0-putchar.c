@@ -1,8 +1,9 @@
 #include "main.h"
 
 /**
- * it is about writing a text
+ * main - Entry point
  *
+ * Return: Always 0 (success)
  */
 int main(void)
 {
