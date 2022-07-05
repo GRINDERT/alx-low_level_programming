@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include <holberton.h>
 
 /**
  * it is about writing a text
@@ -6,6 +6,14 @@
  */
 int main(void)
 {
-	write("_putchar\n");
+	char *sh = "Holberton";
+	while (*sh)
+	{
+		_putchar(*sh);
+		sh++;
+	}
+	_putchar('\n');
+
+	return (0);
 }
 
