@@ -1,19 +1,23 @@
 #include <stdio.h>
-#include <stdlib.h>
-#include <time.h>
 
 /**
- * main - Entry point
- *
- * Return: Always 0 (success)
+ *main - print the letters of the alphabet
+ *Description: print the letters of the alphabet
+ *Return: Always 0 (Success)
  */
+
 int main(void)
 {
-	char low;
+	int i = 97;
 
-	for (low = 'a'; low <= 'z'; low++)
-		putchar(low);
-		putchar("\n");
+	while (i < 123)
+	{
 
-		return(0);
+		putchar(i);
+		i++;
+
+	{
+
+	putchar(10);
+	return (0);
 }
