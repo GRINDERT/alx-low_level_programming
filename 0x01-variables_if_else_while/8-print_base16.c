@@ -1,23 +1,20 @@
 #include <stdio.h>
-
 /**
- *main - print the letters of the alphabet
- *Description: print the letters of the alphabet except e, q
- *Return: lways 0 (Success)
- */
-
+*main - entry point
+*Description: random number in n +ve/-ve
+*Return: 0 on success
+*/
 int main(void)
 {
-	int i = 0;
-
-	while (i < 48)
-	{
-		if (i < 10)
-			putchar(i + '0');
-		else if (i > 41)
-			putchar(i - 10 + 'A');
-		i++;
-	}
-	putchar(10);
-	return (0);
+int num, hexletter, n;
+for (num = 48, n = 0; n < 10; num++, n++)
+{
+putchar(num);
+}
+for (hexletter = 97, n = 1; n < 7; hexletter++, n++)
+{
+putchar(hexletter);
+}
+putchar(10);
+return (0);
 }

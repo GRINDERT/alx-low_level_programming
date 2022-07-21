@@ -1,33 +1,18 @@
 #include <stdio.h>
-
 /**
- * main - sums nultplies of 3 or 5
- *
- * Description: multiples between 0 and 1024
- * Return: Always(0) Success
- */
-
+*main - check for multiples of 3 and 5
+*Return: 0 always
+*/
 int main(void)
 {
-	int start_num, end_num, total;
-
-	end_num = 1024;
-	total = 0;
-
-	for (start_num = 0; start_num < end_num; start_num++)
-	{
-		if ((start_num % 3 == 0) || (start_num % 5 == 0))
-		{
-			total = total + start_num;
-		}
-		else
-		{
-			continue;
-		}
-	}
-
-	printf("%d", total);
-	printf("\n");
-
-	return (0);
+int x = 1024, y, sum = 0;
+for (y = 0; y < x; y++)
+{
+if ((y % 3 == 0) || (y % 5 == 0))
+{
+sum = sum + y;
+}
+}
+printf("%d\n", sum);
+return (0);
 }

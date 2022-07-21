@@ -1,27 +1,20 @@
 #include <stdio.h>
-
 /**
- *main - print the letters of the alphabe
- *Description: print the letters of the aphabet in lower then in uppercase
- *Return: Always 0 (Success)
- */
-
+*main - entry poin
+*Description: random number in n +ve/-ve
+*Return: 0 on success
+*/
 int main(void)
 {
-	int i, j;
-
-	i = 97;
-	j = 65;
-	while (i < 123)
-	{
-		putchar(i);
-		i++;
-	}
-	while (j < 91)
-	{
-		putchar(j);
-		j++;
-	}
-	putchar(10);
-	return (0);
+int firstSLetter, firstCletter, n;
+for (firstSLetter = 97, n = 1; n < 27; firstSLetter++, n++)
+{
+putchar(firstSLetter);
+}
+for (firstCletter = 65, n = 1; n < 27; firstCletter++, n++)
+{
+putchar(firstCletter);
+}
+putchar(10);
+return (0);
 }

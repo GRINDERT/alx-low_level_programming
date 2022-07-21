@@ -1,33 +1,37 @@
 #include <stdio.h>
-
 /**
- *main - print double digit combos
- *Description: print double digit combos
- *Return: Always 0 (Success)
- */
-
+*main - entry point
+*Description: random number in n +ve/-ve
+*Return: 0 on success
+*/
 int main(void)
 {
-		int i, j;
-
-		i = 48;
-		j = 48;
-	while (i < 58)
-	{
-		j = i + 1;
-		while (j < 58)
-		{
-			putchar(i)
-			putchar(j);
-			if (i < 56 || j < 57)
-			{
-				putchar(44);
-				putchar(32);
-			}
-			j++;
-		}
-		i++;
-	}
-	putchar(10);
-	return (0);
+int n, k = '0', m;
+for (n = '0'; n < '9'; n++)
+{
+for (m = k ; m <= '9'; m++)
+{
+if (n != m)
+{
+putchar(n);
+putchar(m);
+}
+if (n == m)
+{
+continue;
+}
+if (n == '8' && m == '9')
+{
+break;
+}
+else
+{
+putchar(',');
+putchar(' ');
+}
+}
+k++;
+}
+putchar('\n');
+return (0);
 }

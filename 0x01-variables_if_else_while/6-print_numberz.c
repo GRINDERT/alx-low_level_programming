@@ -1,23 +1,16 @@
 #include <stdio.h>
-
 /**
- *main - print single digit numbers
- *Desciption: print single digit numbers
- *Return: Always 0 (Success)
- */
-
+*main - entry point
+*Description: random number in n +ve/-ve
+*Return: 0 on succes
+*/
 int main(void)
 {
-	int i;
-	
-	i = 48;
-
-	while (i < 58)
-	{
-		putchar(i);
-		i++;
-	}
-
-	putchar(10);
-	return (0);
+int num, i;
+for (num = 48, i = 0; i < 10; num++, i++)
+{
+putchar(num);
+}
+putchar(10);
+return (0);
 }

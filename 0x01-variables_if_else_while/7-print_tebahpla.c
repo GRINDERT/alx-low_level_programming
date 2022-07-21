@@ -1,20 +1,16 @@
 #include <stdio.h>
-
 /**
- *main - print the latterss of the alphabet
- *Description: print the letters of the alphabet in reverse
- *Return: Always 0 (Success)
- */
-
+*main - entry point
+*Description: random number in n +ve/-ve
+*Return: 0 on success
+*/
 int main(void)
 {
-	int i = 122;
-
-	while (i > 96)
-	{
-		putchar(i);
-		i--;
-	}
-	putchar(10);
-	return (0);
+int firstLetter, n;
+for (firstLetter = 122, n = 1; n < 27; firstLetter--, n++)
+{
+putchar(firstLetter);
+}
+putchar(10);
+return (0);
 }

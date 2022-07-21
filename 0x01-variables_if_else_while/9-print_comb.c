@@ -1,29 +1,21 @@
 #include <stdio.h>
-
-
 /**
- *main - print single digit numbers
- *Description: print single digit numbers with commas
- *Return: Always 0 (Success)
- */
-
-
+*main - entry point
+*Description: random number in n +ve/-ve
+*Return: 0 on success
+*/
 int main(void)
 {
-	int i;
-
-	i = 48;
-
-	while (i < 58)
-	{
-		putchar(i);
-		if (i != 57)
-		{
-			putchar(44);
-			putchar(32);
-*		}
-		i++;
-	}
-	putchar(10);
-	return (0);
+int num, i;
+for (num = 48, i = 0; i < 10; num++, i++)
+{
+putchar(num);
+if (i < 9)
+{
+putchar(44);
+putchar(32);
+}
+}
+putchar(10);
+return (0);
 }
